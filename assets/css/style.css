@@ -1,0 +1,58 @@
+h1 {
+ font-size: 40px;
+ font-weight: 700;
+ 
+}
+
+h2
+ {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+  padding: 20px;
+  position: center;
+  font-size: 30px;
+  text-align: center
+}
+
+
+.header {
+ background-color: orange;
+ font-weight: 700;
+ padding-bottom: 20px;
+ padding-top:  20px;
+ font-size: 50px;
+ line-height: 49px;
+ border-bottom: 3px solid #ddd;
+ text-align: center;
+}
+
+
+
+.Sigils {
+  
+  
+
+}
+
+.work {
+	position: relative;
+    float: left;
+
+}
+
+.Images {
+
+  width: 200px;
+  height: 200px;
+  padding: 20px
+
+
+}
+.Guesses {
+
+
+}
+
+  
+
