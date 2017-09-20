@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GOT Game</title>
+  <title>Trivia Game</title>
+  <!-- CSS reset file location -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<!--  Bootstrap Link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <!-- Our CSS style sheet -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ <!--  viewport file location  -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--  jquery file location --> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-  <script type="text/javascript" src="assets/javascript/game.js"></script> 
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- Our js style sheet -->
+  <script type="text/javascript" src="assets/javascript/Timer.js"></script> 
 
 
 </head>
+
 <body>
-<header>
-<div class="header"> <h1>Sigils Collector</h1></div>
-</header>
+<div class=container><h1>Totally Trrivial Trivia </h1>
+<div><h1>Time Remaining <span id="remainingTime"> 00:45 </span> seconds!</div></h1>
 
-<div id="Sigils">   </div>
+<form action="">
+  <h3>When expecting her child, Daenerys Targaryen (Emilia Clarke) must do what as part of a special Dothraki ceremony?</h3>
+  <input type="radio" name="Daenerys" value="1"> Drink the blood of her husband<br>
+  <input type="radio" name="Daenerys" value="2"> Spend seven days alone in the plains of Essos<br>
+  <input type="radio" name="Daenerys" value="3"> Eat seven dragon eggs<br>
+  <input type="radio" name="Daenerys" value="4"> Eat the raw heart of a stallion<br>
 
-<h1>Number to Guess: <span id="number-to-guess"></span></h1>
+  <h3>Which of the following did Tyrion Lannister (Peter Dinklage) NOT say in "Game of Thrones"??</h3>
+  <input type="radio" name="Tyrion" value="1"> I may be the Imp. But I’m no jackass.<br>
+  <input type="radio" name="Tyrion" value="2"> Oh, did I kill him too? I’ve been a very busy man.<br>
+  <input type="radio" name="Tyrion" value="3"> It's not slander if it’s true.<br>
+  <input type="radio" name="Tyrion" value="4"> It's not easy being drunk all the time. If it were easy, everyone would do it.<br>
 
-      <div id = "Images" class="work">
-		<!-- <img src="assets/images/HouseLannister.png" alt="Lannisters" class = "Sigils-image">   -->
-		<h2>Lannisters</h2>     
-      </div>
-     
-      <div class="work">        
-  <!--       <img src="assets/images/HouseStark.png" alt="House Stark"  class = "Sigils-image">   -->
-        <h2>Starks</h2>      
-      </div>
+  <h3>Who is the eldest child of Lady Catelyn (Michelle Fairley) and Lord Eddard Stark (Sean Bean)?</h3>
+  <input type="radio" name="Catelyn" value="1"> Bran Stark<br>
+  <input type="radio" name="Catelyn" value="2"> Robb Stark<br>
+  <input type="radio" name="Catelyn" value="3"> Jon Snow<br>
+  <input type="radio" name="Catelyn" value="4"> Sansa Stark<br>
 
-      <div class="work">       
-     <!--    <img src="assets/images/HouseTargaryen.png" alt="House Targaryen"  class = "Sigils-image"> -->
-        <h2>Targaryens</h2>
-      </div>
-      
-      <div class="work">      
-     <!--  <img src="assets/images/WhiteWalkers.png" alt="White Walkers"  class = "Sigils-image">  -->
-      <h2>White Walkers</h2>      
-      </div>
+  <h3>Drogo (Jason Momoa) is a warlord of the nomadic horse-lord Dothraki people, and commands a tribe of tens of thousands. What is a Dothraki chieftain like Drogo called?</h3>
+  <input type="radio" name="Drogo" value="1"> A kzar<br>
+  <input type="radio" name="Drogo" value="2"> A khal<br>
+  <input type="radio" name="Drogo" value="3"> A grumpkin<br>
+  <input type="radio" name="Drogo" value="4">A gazhal<br>
 
+  <h3>A body of water known as the Narrow Sea separates the land of Westeros from what other continent?</h3>
+  <input type="radio" name="Sea" value="1"> Sothoryos<br>
+  <input type="radio" name="Sea" value="2"> Easteros<br>
+  <input type="radio" name="Sea" value="3"> Martinia<br>
+  <input type="radio" name="Sea" value="4">Essos<br>
+
+
+  <h3>Who are the law enforcers who act as policemen of King’s Landing?</h3>
+  <input type="radio" name="enforcers" value="1"> City Watch<br>
+  <input type="radio" name="enforcers" value="2"> Brotherhood Without Banners<br>
+  <input type="radio" name="enforcers" value="3"> Order of Maesters<br>
+  <input type="radio" name="enforcers" value="4">Faceless Men<br>
+
+ <h3>In “Baelor,” the ninth episode of the first season, Lord Eddard Stark (Sean Bean) is beheaded. What is the name of Valyrian steel greatsword that is used to slice off his head?</h3>
+  <input type="radio" name="Eddard" value="1"> Ice<br>
+  <input type="radio" name="Eddard" value="2"> Glamdring<br>
+  <input type="radio" name="Eddard" value="3"> Stinger<br>
+  <input type="radio" name="Eddard" value="4">The Firebrand<br>
+
+ <h3>In the third season, in what has become known as the “Red Wedding” scene, Roose Bolton (Michael McElhatton) stabs Robb Stark (Richard Madden) in the heart. What words does Bolton whisper in Stark’s ear before murdering him?</h3>
+  <input type="radio" name="Wedding" value="1"> “If you think this has a happy ending, you haven’t been paying attention.”<br>
+  <input type="radio" name="Wedding" value="2"> "Chaos isn't a pit. Chaos is a ladder."<br>
+  <input type="radio" name="Wedding" value="3"> "Do, or do not. There is no try."<br>
+  <input type="radio" name="Wedding" value="4">"The Lannisters send their regards."<br>
+
+<button id ="done">Done</button>
+</form>
+
+
+
+
+</div>
 </body>
 </html>
