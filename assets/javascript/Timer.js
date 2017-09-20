@@ -4,7 +4,7 @@
 
 // This code will run as soon as the page loads
 window.onload = function() {
-
+ $("#done").on("click", stopwatch.done);
   stopwatch.start ()
 
 
@@ -19,7 +19,7 @@ var clockRunning = true;
 // Our stopwatch object
 var stopwatch = {
 
-  time: 10,
+  time: 45,
 
 
   start: function() {
@@ -70,7 +70,24 @@ var stopwatch = {
     }
 
     return minutes + ":" + seconds;
-  }
+  },
+
+  done: function(){
+
+    var correctAnswer = document.getElementById("heart" && "jackass"&& "Robb"&& "khal"&&"Essos"&& "City"&&"Ice"&&"Lannisters")
+
+    if (correctAnswer.checked){
+    alert("CORRECT")
+  
+
 };
+
+
+  }
+
+
+
+};
+
 
 
